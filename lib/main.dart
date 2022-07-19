@@ -13,10 +13,10 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-  // Test refactor
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    testFunction('');
     return MaterialApp(
       title: 'Material Design 3',
       theme: ThemeData(
@@ -27,5 +27,12 @@ class MyApp extends StatelessWidget {
       ),
       home: const SearchPage(),
     );
+  }
+
+  /// Método de prueba para hacer uso de documentación
+  /// [testParam] como descripción del parámetro utilizado
+  ///
+  bool testFunction(String testParam) {
+    return false;
   }
 }
