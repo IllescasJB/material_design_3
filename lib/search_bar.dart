@@ -8,6 +8,7 @@ class SearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Test refactor
     return SizedBox(
       width: MediaQuery.of(context).size.width - 32,
       child: TextFormField(
